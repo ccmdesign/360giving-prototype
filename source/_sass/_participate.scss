@@ -1,0 +1,39 @@
+// Adds padding for the Call to action panel
+.participate { padding-top: 150px; }
+
+
+.participate {
+  background-color: $dark-gray;
+  color: white;
+  padding-bottom: 40px;
+
+  @include breakpoint($medium) { 
+    padding-left: 20px; 
+    padding-right: 20px; 
+  }
+
+  @include breakpoint($medium-up) { padding-bottom: 80px; }
+
+  h2 {
+    margin: 0 0 20px 0;
+    color: $orange;
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    border: 1px solid $orange;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 10px;
+    border-left-width: 4px;
+  }
+}
+
+.highlight {
+  font-size: 1.8rem;
+  font-weight: 100;
+}

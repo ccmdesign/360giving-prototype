@@ -1,0 +1,20 @@
+.intro {
+  background-color: $light-gray;
+  padding: 40px 0;
+  
+  @include breakpoint($medium) { 
+    padding-left: 20px; 
+    padding-right: 20px; 
+  }
+
+  h3 {
+    text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $purple;
+    margin-bottom: 0;
+  }
+}
+
+
+

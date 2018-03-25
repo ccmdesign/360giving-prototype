@@ -1,51 +1,61 @@
 ---
 layout: default
-title: Facebook Policy Team - Canada
+title: Digging the Data | 360 Giving Data Visualization Challenge
 ---
 <main>
-  <header class="header">
-    <div class="facebook-logo">
-      <!-- <img src="{{ 'images/facebook-logo.png' | relative_url }}" alt="">   -->
-    </div>
-    <nav class="lang-switch"><a class="" href="{{ '/index-fr.html' | relative_url}}">FR</a></nav>
-  </header>
-  <div class="content centered dark-bg">
-    <h1 class="site-logo small-only"><img src="{{ 'images/facebook-election-integrity-en-white.png' | relative_url }}" alt="Facebook Policy Team - Canada"></h1>  
-    <h1 class="site-logo medium-up"><img src="{{ 'images/facebook-election-integrity-en-h-white.png' | relative_url }}" alt="Facebook Policy Team - Canada"></h1>  
-  </div>
-  <div class="dark-bg">
-    <div class="content">
-      <p>At Facebook, we are committed to doing our part to protect and safeguard the integrity of the electoral process in Canada by ensuring that the accounts of politicians and political parties are secure and that people have access to reliable information and diverse perspectives.</p>
-      <p>Facebook’s Canadian Election Integrity Initiative is a direct response to the Communications Security Establishment's Cyber Threats to Canada’s Democratic Process report commissioned by the Minister of Democratic Institutions.</p> 
-      <p>It includes:</p>
-      <ul>
-        <li>The launch of a new 2-year partnership between Facebook Canada and MediaSmarts to promote digital and news literacy;</li>
-        <li>The release of the Facebook Cyber Hygiene Guide for Politicians and Political Parties, to support information security;</li>
-        <li>The launch of an emergency Canadian Facebook Cyber Threats Crisis Email Line, in the event of cyber interference including suspected hacks; and</li>
-        <li>The announcement of a Facebook Cyber Hygiene Training Program open to all federal political parties.</li>
-        <li style="letter-spacing: 0.2px;">Starting in November, people will be able to click “View Ads” on a Page and view ads a Page is running on Facebook, Instagram and Messenger — whether or not the person viewing is in the intended audience for the ad. We will start this test in Canada and roll it out to the US by this summer, as well as broadly to all other countries around the same time.</li>
-      </ul>
-    </div>
-  </div>
-  <div class="products">
-    <div class="product">
-      <div class="product__image">
-        <img src="{{ '/images/cyber-hygiene-report-en-mockup.jpg' | relative_url }}" alt="">
-      </div>
-      
-      <div class="product__content content">
-        <h2>Cyber Hygiene Guide</h2>
-        <p style="letter-spacing: 0;">Here, you can download the Facebook Cyber Hygiene Guide for Politicians and Political Parties providing best practices for politicians and political parties on how to keep Facebook Pages and accounts secure.</p>    
-        <a href="{{ '/pdfs/cyber-hygiene-en.pdf' | relative_url }}" download class="button button--full download">Download</a>
-      </div>
+  <section class="hero">
+    <h1>Digging<br> the Data</h1>
+    <h2>360 Giving<br> Data Visualization<br> Challenge</h2>
+    <h3>Enter our prize challenge<br> and your visualisation could win<br> thousands of pounds</h3>
+  </section>
 
+  <section class="intro">
+    <div class="wrapper">
+      <p>360Giving is inviting businesses, not for profit organisations and individuals to use the 360Giving dataset to develop and visualise innovative solutions to two key questions facing the grantmaking sector.</p>
+      <p>Your data visualisations must answer the following questions that were selected by an expert panel in our Quest for Questions Challenge</p>
+      <h3>Question 1</h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum dignissimos ipsum accusamus dolorum! Numquam, fugit nisi quisquam consectetur tenetur dolore assumenda praesentium quo asperiores modi, saepe animi tempore repellat.</p>
+      <h3>Question 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum dignissimos ipsum accusamus dolorum! Numquam, fugit nisi quisquam consectetur tenetur dolore assumenda praesentium quo asperiores modi, saepe animi tempore repellat.</p>
     </div>
-    <div class="product content product--no-flex">
-      <h2>MediaSmarts Reality Check PSA</h2>
-      <video width="100%" controls="" controlslist="nodownload" poster="images/video-poster.png">
-        <source src="/images/video-en.webm">
-      </video>
+    <div class="wrapper">
+      <div class="call-to-action">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorum quis porro molestias iste est obcaecati.</p>
+        <a class="button button--negative" href="#">Submit</a>  
+      </div>
     </div>
-  </div>
-</div>
+  </section>
+    
+  <section class="participate">
+    <div class="wrapper">
+      <h2>Participate</h2>
+      <p class="highlight">Whether it’s an interactive web app, a graphic image, a video or another form of visualisation, we are looking for responses to these questions that excite and appeal. They will be assessed against the following criteria:</p>
+      <ul>
+        <li>The applicant’s ability to answer the Challenge question correctly and clearly</li>
+        <li>Aesthetics and creativity</li>
+        <li>How innovative it is compared to current visualisations.</li>
+      </ul>
+      <p>Entries must use the 360Giving dataset to answer one of the Challenge questions and you are encouraged to use other datasets alongside it. You can find a list of suggest datasets here.</p>
+      <p>All submissions will be judged by a panel made up of experts from the sector selected by 360Giving. They will award prizes of between £2,000 and £6,000 to the best three responses to the questions.</p>
+      <p>In addition, each entry that meets our submission criteria will receive an award of between £100 and £500 (depending on the number of submissions and their quality).</p>
+      <p>The closing date for entries is 10th June. Winners will be announced by 31st August 2018.</p>
+    </div>
+  </section>
+  
+  <section class="projects">
+    <div class="wrapper">
+      <h2>Projects</h2>
+      <div class="card-container">
+        {% for i in (1..8) %}
+        <div class="card card--orange">
+          <div class="card__info">
+            <h3>Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, modi reprehenderit rerum sed asperiores minima recusandae maior</p>  
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
 </main>

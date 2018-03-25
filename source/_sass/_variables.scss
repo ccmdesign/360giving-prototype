@@ -1,0 +1,23 @@
+// Breakpoints
+$small-only: (max-width 40em);
+$medium: 40.063em 64em;
+$touch: (max-width 64em);
+$medium-up: 40.063em;
+$large: 64.063em;
+
+$body-font: "neusa-next-std",sans-serif;
+$display-font: "neusa-next-std-compact",sans-serif;;
+
+// Project Specific Colors
+$purple: #662584;
+$blue: #00AFDE;
+$yellow: #E2E41A;
+$light-gray: #eee;
+$dark-gray: #3c3e3d;
+$red: #9b2061;
+$orange: #f4821f;
+
+// Global Color Variables
+$main-color: $orange;
+$text-color: $dark-gray;
+

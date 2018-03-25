@@ -1,0 +1,92 @@
+.projects {
+  background-color: $light-gray;
+  padding: 50px 0;
+  @include breakpoint($medium) { padding: 20px; }
+
+  h2 {
+    margin: 0 0 20px 0;
+    color: $dark-gray;
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    border: 1px solid $orange;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 10px;
+    border-left-width: 4px;
+  }
+}
+
+.card-container {
+  @include breakpoint($medium-up) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
+
+.card {
+  background-image: url("../images/35fe981bc2952902d5188679a2dbd592.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 10px rgba(black, .1);
+  
+  @include breakpoint($small-only) { padding-top: 80%; }
+
+  @include breakpoint($medium-up) { 
+    flex: 1;
+    min-width: 342px;
+    min-height: 342px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @include breakpoint($large) { 
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &:hover &__info {
+    top: 0;
+  }
+
+  &__info {
+    @extend .u-transition;
+    padding: 20px;
+    color: white;
+    
+    @include breakpoint($medium-up) { 
+      position: absolute;
+      top: 342px;
+      padding-bottom: 300px;
+    }
+
+    @include breakpoint($large) { 
+      top: 300px;
+      height: 100%;
+    }
+
+
+    h3 { 
+      text-align: left; 
+      font-weight: 400;
+      font-size: 2rem;
+      margin: 0 0 10px 0;
+      letter-spacing: 1px;
+    }
+  }
+
+  &--red .card__info { background-color: rgba($red, .9); }
+  &--orange .card__info { background-color: rgba($orange, .9); }
+}

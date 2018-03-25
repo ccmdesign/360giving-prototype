@@ -1,0 +1,59 @@
+.call-to-action {
+  background-color: $red;
+  box-shadow: 2px 2px 10px rgba(black, .2);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  bottom: -160px;
+  margin-top: -140px;
+
+  @include breakpoint($medium-up) { padding: 40px; }
+
+  @include breakpoint($large) {
+    max-width: 1000px;
+    margin-left: -40px;
+    padding: 40px;
+  }
+
+  
+}
+
+
+
+
+
+// .call-to-action {
+  
+//   // &__prev-section {
+//   //   padding-bottom: 22vh;
+//   //   @include breakpoint($medium-up) {
+//   //     padding-bottom: 12vh;
+//   //   }
+//   // }
+
+//   &__panel {
+//     // margin-bottom: -18vh;
+  
+//     @include breakpoint($medium-up) {
+//       margin-top: -9vh;
+//     }
+
+//     background-color: $red;
+//     box-shadow: 2px 2px 10px rgba(black, .2);
+//     padding: 20px;
+//     color: white;
+//     text-align: center;
+//     font-weight: 400;
+
+//     @include breakpoint($medium-up) { padding: 40px; }
+
+//     @include breakpoint($large) {
+//       max-width: 1000px;
+//       margin-left: -40px;
+//       padding: 40px;
+//     }
+//   }
+// }
+
