@@ -39,24 +39,24 @@ li {
 }
 
 li + li {
-  
+
 }
 
 ul {
-  
-  
+
+
 }
 
 .wrapper {
-  @include breakpoint($small-only) { 
-    margin-left: 20px; 
-    margin-right: 20px; 
+  @include breakpoint($small-only) {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-  @include breakpoint($medium-up) { 
-    max-width: 960px; 
-    margin-left: auto; 
-    margin-right: auto; 
+  @include breakpoint($medium-up) {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
@@ -69,10 +69,19 @@ ul {
   text-align: center;
 
   display: inline-block;
-  @include breakpoint($small-only) { 
+  @include breakpoint($small-only) {
     display: block;
-    padding: 15px 20px; 
+    padding: 15px 20px;
   }
-  
+
   &--negative { color: white; }
+}
+
+#particles-container {
+    div {
+        position: absolute;
+    }
+    canvas {
+        overflow: hidden;
+    }
 }

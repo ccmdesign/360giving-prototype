@@ -3,10 +3,12 @@ layout: default
 title: Digging the Data | 360 Giving Data Visualization Challenge
 ---
 <main>
-  <section class="hero">
-    <h1>Digging<br> the Data</h1>
-    <h2>360 Giving<br> Data Visualization<br> Challenge</h2>
-    <h3>Enter our prize challenge<br> and your visualisation could win<br> thousands of pounds</h3>
+  <section id="particles-container" class="hero">
+    <div>
+      <h1>Digging<br> the Data</h1>
+      <h2>360 Giving<br> Data Visualization<br> Challenge</h2>
+      <h3>Enter our prize challenge<br> and your visualisation could win<br> thousands of pounds</h3>
+    </div>
   </section>
 
   <section class="intro">
@@ -21,11 +23,11 @@ title: Digging the Data | 360 Giving Data Visualization Challenge
     <div class="wrapper">
       <div class="call-to-action">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorum quis porro molestias iste est obcaecati.</p>
-        <a class="button button--negative" href="#">Submit</a>  
+        <a class="button button--negative" href="#">Submit</a>
       </div>
     </div>
   </section>
-    
+
   <section class="participate">
     <div class="wrapper">
       <h2>Participate</h2>
@@ -41,7 +43,7 @@ title: Digging the Data | 360 Giving Data Visualization Challenge
       <p>The closing date for entries is 10th June. Winners will be announced by 31st August 2018.</p>
     </div>
   </section>
-  
+
   <section class="projects">
     <div class="wrapper">
       <h2>Projects</h2>
@@ -50,12 +52,16 @@ title: Digging the Data | 360 Giving Data Visualization Challenge
         <div class="card card--orange">
           <div class="card__info">
             <h3>Project Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, modi reprehenderit rerum sed asperiores minima recusandae maior</p>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, modi reprehenderit rerum sed asperiores minima recusandae maior</p>
           </div>
         </div>
         {% endfor %}
       </div>
     </div>
   </section>
+
+  <!-- <script src="{{'/js/vendor/sketch.min.js' | relative_url}}"></script> -->
+  <script src="{{'/js/vendor/sketch.js' | relative_url}}"></script>
+  <script src="{{'/js/particles.js' | relative_url}}"></script>
 
 </main>
