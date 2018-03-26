@@ -6,28 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<!-- URL HERE -->"/>
-    <meta property="og:title" content="{{page.title}}"/>
+    <meta property="og:title" content=""/>
     <meta property="og:image" content="<!-- DESCRIPTION HERE -->"/>
     <meta property="og:description" content="<!-- DESCRPTION HERE -->" />
 
-    <title>{{page.title}}</title>
+    <title></title>
 
-    <link rel="stylesheet" href="{{ '/vendor/normalize.css' | relative_url}}">
-    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url}}">
+    <link rel="stylesheet" href="/data-viz/vendor/normalize.css">
+    <link rel="stylesheet" href="/data-viz/css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/nri0jbb.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
 
   <body>
-    {{content}}
+    <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
     
 
     <footer>
     
     </footer>
     <a class="by-line" href="http://ccmdesign.ca" target="_blank" title="Website designed and developed by ccm.design">by ccm.design</a>    
-    <script src="{{'/vendor/jquery-3.3.1.min.js' | relative_url}}"></script>
-    <script src="{{'/js/scripts.js' | relative_url}}"></script>
+    <script src="/data-viz/vendor/jquery-3.3.1.min.js"></script>
+    <script src="/data-viz/js/scripts.js"></script>
   </body>
 </html>
