@@ -12,10 +12,10 @@ Particle.prototype = {
 
         this.alive = true;
 
-        this.radius = radius || 10;
-        this.wander = 0.15;
+        this.radius = radius || 20;
+        this.wander = 17.95;
         this.theta = random( TWO_PI );
-        this.drag = 0.92;
+        this.drag = 2.99;
         this.color = '#fff';
 
         this.x = x || 0.0;
@@ -34,11 +34,11 @@ Particle.prototype = {
         this.vy *= this.drag;
 
         this.theta += random( -0.5, 0.5 ) * this.wander;
-        this.vx += sin( this.theta ) * 0.1;
-        this.vy += cos( this.theta ) * 0.1;
+        this.vx += sin( this.theta ) * 0.2;
+        this.vy += cos( this.theta ) * 0.3;
 
-        this.radius *= 0.96;
-        this.alive = this.radius > 0.5;
+        this.radius *= 0.999;
+        this.alive = this.radius > 1.1;
     },
 
     draw: function( ctx ) {
@@ -54,8 +54,9 @@ Particle.prototype = {
 // Example
 // ----------------------------------------
 
-var MAX_PARTICLES = 280;
-var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
+var MAX_PARTICLES = 480;
+var COLOURS = [ '#662584', '#00AFDE', '#E2E41A', '#3c3e3d', '#9b2061', '#f4821f', '#f4821f' ];
+// var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
 
 var particles = [];
 var pool = [];
