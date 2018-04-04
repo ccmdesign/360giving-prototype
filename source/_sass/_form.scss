@@ -1,0 +1,154 @@
+.page-title {
+  background-color: $dark-gray;
+  h1 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    
+    margin: 0;
+    padding: 15px 0;
+    color: white;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+}
+
+.form-header,
+.project-info { 
+  background-color: $light-gray; 
+}
+
+#back-button {
+  text-align: left;
+}
+
+.form {
+  input,
+  textarea {
+    webkit-appearance: none;
+    outline: 0;
+    transition: all .4s ease;
+  }
+
+  input[type='text'],
+  input[type='url'],
+  textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 15px 5px;
+    @include breakpoint($small-only) { padding: 10px; }
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid rgba(black, .15);
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+    &:focus {
+      border-color: $purple;
+    }
+  }
+
+  textarea {
+    height: 250px;
+    resize: none;
+
+    &:focus {
+      background-color: rgba(black, .1);
+    }
+  }
+
+  fieldset { 
+    border: 0; 
+    padding: 0;
+  }
+
+  h2 {
+    text-align: left;
+    font-weight: 400;
+    font-family: $body-font;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    opacity: .7;
+  }
+
+  header {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .project-info,
+  .team { 
+    padding: 40px 0;
+  }
+}
+
+.project-links {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  @include breakpoint($small-only) { 
+    flex-direction: column;
+  }
+
+  input {
+    flex: 1;
+    display: inline-block;
+    width: 100%;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.team-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-member {
+  box-sizing: border-box;
+  border: 1px solid rgba(black, .2);
+  padding: 20px;
+  margin-bottom: 20px;
+
+  @include breakpoint($small-only) { width: 100%; }
+  
+  @include breakpoint($medium-up) {
+    flex: 1 0 48%;
+
+    &:nth-child(odd) { margin-right: 20px; }
+  }
+
+  &--add {
+    text-align: center;
+    background-color: rgba(black, .07);
+    padding: 10px;
+
+    @include breakpoint($medium-up) { 
+      padding: 80px; 
+      max-width: 49%;
+    }
+      .material-icons {
+      @include breakpoint($medium-up) { 
+        font-size: 10rem;
+        display: block;
+        opacity: .1;
+        line-height: .8;
+        margin-top: -20px;
+      }
+    }
+  }
+}
+
+.form-controls { 
+  text-align: right;
+  .button { 
+    letter-spacing: 1px; 
+    color: rgba(black, .6);
+  }
+}

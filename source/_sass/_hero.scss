@@ -45,4 +45,22 @@
     }
   }
 
+  .arrow {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+
+    i { 
+      animation: pulse 1s infinite;
+      font-size: 6rem; 
+      display: block;
+      line-height: .25;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0.2; }
 }

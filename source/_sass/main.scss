@@ -67,14 +67,34 @@ ul {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-
+  cursor: pointer;
   display: inline-block;
+  
   @include breakpoint($small-only) {
     display: block;
     padding: 15px 20px;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $orange;
+    color: white;
   }
 
   &--negative { color: white; }
+
+  &--clean {
+    border: 0;
+    padding-left: 0;
+    i { 
+      vertical-align: -4px; 
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: $orange;
+    }
+  }
 }
 
 #particles-container {
