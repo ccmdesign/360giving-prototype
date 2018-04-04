@@ -104,6 +104,11 @@ li {
   .button--negative {
     color: white; }
 
+#particles-container div {
+  position: absolute; }
+#particles-container canvas {
+  overflow: hidden; }
+
 .hero {
   height: 95vh;
   display: flex;
