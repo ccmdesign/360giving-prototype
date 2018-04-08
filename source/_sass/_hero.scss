@@ -17,20 +17,29 @@
 
   h1, h2, h3 {
     margin: 0 0 4vh;
-    @include breakpoint($medium-up) {
-      margin: 0 0 4vh;
+    span {
+      display: inline-block;
+      padding: 0 7px;
     }
+    @include breakpoint($medium-up) { margin: 0 0 4vh; }
   }
 
   h1 {
     font-size: 4.5rem;
     line-height: 1.25;
-    @include breakpoint($medium-up) { font-size: 7rem; }
+    text-shadow: 1px 1px 8px rgba(black, .4);
+    @include breakpoint($medium-up) { font-size: 7rem; }  
   }
 
   h2 {
     font-size: 2.6rem;
     line-height: 1.35;
+    
+    span { 
+      background-color: rgba($red, .8);
+      @include breakpoint($medium-up) { margin-left: -16px; } 
+    }
+
     @include breakpoint($medium-up) { 
       font-size: 4rem; 
       letter-spacing: 4px;
@@ -39,10 +48,13 @@
 
   h3 {
     font-size: 1.4rem;
-    @include breakpoint($medium-up) { 
-      font-size: 3rem; 
-      opacity: .4;
+    
+    span { 
+      background-color: rgba($orange, .8); 
+      @include breakpoint($medium-up) { margin-left: -10px; } 
     }
+
+    @include breakpoint($medium-up) { font-size: 3rem; }
   }
 
   .arrow {
