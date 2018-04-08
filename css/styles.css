@@ -45,9 +45,14 @@
 
 .by-line {
   text-align: right;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-color: #f4821f;
   display: block;
-  padding: 10px; }
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 300; }
+  .by-line:hover {
+    font-weight: 400; }
 
 body {
   margin: 0;
@@ -96,13 +101,26 @@ li {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
   display: inline-block; }
   @media (max-width: 40em) {
     .button {
       display: block;
-      padding: 15px 20px; } }
+      padding: 15px 20px;
+      width: 100%; } }
+  .button:hover {
+    background-color: #f4821f;
+    color: white; }
   .button--negative {
     color: white; }
+  .button--clean {
+    border: 0;
+    padding-left: 0; }
+    .button--clean i {
+      vertical-align: -4px;
+      margin-right: 10px; }
+    .button--clean:hover {
+      color: #f4821f; }
 
 #particles-container div {
   position: absolute; }
@@ -126,29 +144,58 @@ li {
       display: none; } }
   .hero h1, .hero h2, .hero h3 {
     margin: 0 0 4vh; }
+    .hero h1 span, .hero h2 span, .hero h3 span {
+      display: inline-block;
+      padding: 0 7px; }
     @media (min-width: 40.063em) {
       .hero h1, .hero h2, .hero h3 {
         margin: 0 0 4vh; } }
   .hero h1 {
     font-size: 4.5rem;
-    line-height: 1.25; }
+    line-height: 1.25;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4); }
     @media (min-width: 40.063em) {
       .hero h1 {
         font-size: 7rem; } }
   .hero h2 {
     font-size: 2.6rem;
     line-height: 1.35; }
+    .hero h2 span {
+      background-color: rgba(155, 32, 97, 0.8); }
+      @media (min-width: 40.063em) {
+        .hero h2 span {
+          margin-left: -16px; } }
     @media (min-width: 40.063em) {
       .hero h2 {
         font-size: 4rem;
         letter-spacing: 4px; } }
   .hero h3 {
     font-size: 1.4rem; }
+    .hero h3 span {
+      background-color: rgba(244, 130, 31, 0.8); }
+      @media (min-width: 40.063em) {
+        .hero h3 span {
+          margin-left: -10px; } }
     @media (min-width: 40.063em) {
       .hero h3 {
-        font-size: 3rem;
-        opacity: .4; } }
+        font-size: 3rem; } }
+  .hero .arrow {
+    color: white;
+    position: absolute;
+    bottom: 30px; }
+    .hero .arrow i {
+      animation: pulse 1s infinite;
+      font-size: 6rem;
+      display: block;
+      line-height: .25; }
 
+@keyframes pulse {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 0.7; }
+  100% {
+    opacity: 0.2; } }
 .intro {
   background-color: #eee;
   padding: 40px 0; }
@@ -162,6 +209,10 @@ li {
     text-transform: uppercase;
     color: #662584;
     margin-bottom: 0; }
+  .intro .question h3 {
+    font-size: 1.5rem; }
+  .intro .question p {
+    font-size: 1.8rem; }
 
 .call-to-action {
   background-color: #9b2061;
@@ -287,3 +338,126 @@ li {
     background-color: rgba(155, 32, 97, 0.9); }
   .card--orange .card__info {
     background-color: rgba(244, 130, 31, 0.9); }
+
+.page-title {
+  background-color: #3c3e3d; }
+  .page-title h1 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 15px 0;
+    color: white;
+    letter-spacing: 1px;
+    text-align: left; }
+
+.form-header,
+.project-info {
+  background-color: #eee; }
+
+#back-button {
+  text-align: left; }
+
+.form input,
+.form textarea {
+  webkit-appearance: none;
+  outline: 0;
+  transition: all .4s ease; }
+.form input[type='text'],
+.form input[type='url'],
+.form textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 15px 5px;
+  margin-bottom: 10px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px; }
+  @media (max-width: 40em) {
+    .form input[type='text'],
+    .form input[type='url'],
+    .form textarea {
+      padding: 10px; } }
+  .form input[type='text']:focus,
+  .form input[type='url']:focus,
+  .form textarea:focus {
+    border-color: #662584; }
+.form textarea {
+  height: 250px;
+  resize: none; }
+  .form textarea:focus {
+    background-color: rgba(0, 0, 0, 0.1); }
+.form fieldset {
+  border: 0;
+  padding: 0; }
+.form h2 {
+  text-align: left;
+  font-weight: 400;
+  font-family: "neusa-next-std", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  opacity: .7; }
+.form header {
+  padding-top: 80px;
+  padding-bottom: 0; }
+.form .project-info,
+.form .team {
+  padding: 40px 0; }
+
+.project-links {
+  padding: 0;
+  width: 100%;
+  display: flex; }
+  @media (max-width: 40em) {
+    .project-links {
+      flex-direction: column; } }
+  .project-links input {
+    flex: 1;
+    display: inline-block;
+    width: 100%;
+    margin-right: 10px; }
+    .project-links input:last-child {
+      margin-right: 0; }
+
+.team-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.team-member {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px; }
+  @media (max-width: 40em) {
+    .team-member {
+      width: 100%; } }
+  @media (min-width: 40.063em) {
+    .team-member {
+      flex: 1 0 48%; }
+      .team-member:nth-child(odd) {
+        margin-right: 20px; } }
+  .team-member--add {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.07);
+    padding: 10px; }
+    @media (min-width: 40.063em) {
+      .team-member--add {
+        padding: 80px;
+        max-width: 49%; } }
+    @media (min-width: 40.063em) {
+      .team-member--add .material-icons {
+        font-size: 10rem;
+        display: block;
+        opacity: .1;
+        line-height: .8;
+        margin-top: -20px; } }
+
+.form-controls {
+  text-align: right; }
+  .form-controls .button {
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.6); }

@@ -37,7 +37,7 @@ Particle.prototype = {
         this.vx += sin( this.theta ) * 0.2;
         this.vy += cos( this.theta ) * 0.3;
 
-        this.radius *= 0.999;
+        this.radius *= 0.99;
         this.alive = this.radius > 1.1;
     },
 
@@ -81,7 +81,7 @@ demo.setup = function() {
     // Set off some initial particles.
     var i, x, y;
 
-    for ( i = 0; i < 20; i++ ) {
+    for ( i = 0; i < 60; i++ ) {
         x = ( demo.width * 0.5 ) + random( -100, 100 );
         y = ( demo.height * 0.5 ) + random( -100, 100 );
         demo.spawn( x, y );
@@ -100,7 +100,7 @@ demo.spawn = function( x, y ) {
 
     particle.wander = random( 0.5, 2.0 );
     particle.color = random( COLOURS );
-    particle.drag = random( 0.9, 0.99 );
+    particle.drag = random( 0.9, 0.93 );
 
     theta = random( TWO_PI );
     force = random( 2, 8 );
