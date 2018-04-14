@@ -7,13 +7,35 @@
     padding-right: 20px; 
   }
 
-  h3 {
-    text-align: left;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $purple;
-    margin-bottom: 0;
+  h3.invitation-message {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    @include breakpoint($medium-up) { font-size: 3.2rem; }
+
+    strong {
+      font-weight: 300;
+      background-color: rgba(black, .1);
+      display: inline-block;
+      padding: 0 10px;
+      margin: 0 -5px;
+    }
   }
+
+  p.invitation-message {
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+    @include breakpoint($medium-up) { font-size: 2.1rem; }
+
+    strong {
+      font-weight: 300;
+      background-color: rgba(black, .1);
+      display: inline-block;
+      padding: 0 10px;
+      margin: 0 -5px;
+    }
+  }
+
+
 
   .question {
     h3 { font-size: 1.5rem; }

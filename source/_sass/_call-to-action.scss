@@ -1,20 +1,41 @@
 .call-to-action {
-  background-color: $red;
   box-shadow: 2px 2px 10px rgba(black, .2);
   padding: 20px;
-  color: white;
-  text-align: center;
-  font-weight: 400;
-  position: relative;
-  bottom: -160px;
-  margin-top: -140px;
-
+  color: rgba(white, .7);
+  margin-bottom: 20px;
   @include breakpoint($medium-up) { padding: 40px; }
 
-  @include breakpoint($large) {
-    max-width: 1000px;
-    margin-left: -40px;
-    padding: 40px;
+  h3 { 
+    text-transform: uppercase; 
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+    color: black;
+  }
+
+  p { font-weight: 300; }
+  p:last-child { margin-bottom: 0; }
+  
+  &--red { background-color: $red; }
+  &--purple { background-color: $purple; }
+  &--black { background-color: $dark-gray; }
+  &--blue { background-color: $blue; }
+  &--orange { background-color: $orange; }
+  &--subtle { background-color: rgba(black, .2); }
+  &--white { background-color: white; }
+
+
+  &--displaced {
+    text-align: center;
+    position: relative;
+    bottom: -160px;
+    margin-top: -140px;
+
+    
+
+    @include breakpoint($large) {
+      max-width: 1000px;
+      margin-left: -40px;
+    }
   }
 
   
