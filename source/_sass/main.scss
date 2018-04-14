@@ -97,6 +97,15 @@ ul {
   }
 }
 
+#back-button {
+  text-align: left;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+
 #particles-container {
     div {
         position: absolute;
