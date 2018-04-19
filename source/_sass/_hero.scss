@@ -11,6 +11,9 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  @include breakpoint($medium) { min-height: 900px; }
+  @include breakpoint($large) { min-height: 0; }
+
   @include breakpoint($medium-up) {
     br { display: none; }
   }

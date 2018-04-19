@@ -5,11 +5,13 @@
   margin-bottom: 20px;
   @include breakpoint($medium-up) { padding: 40px; }
 
+  transform: scale(1); // z-index hack
+
   h3 { 
     text-transform: uppercase; 
     font-weight: 400 !important;
     letter-spacing: 2px;
-    color: black;
+    color: rgba(black, .6);
   }
 
   p { font-weight: 300; }
@@ -37,8 +39,6 @@
       margin-left: -40px;
     }
   }
-
-  
 }
 
 

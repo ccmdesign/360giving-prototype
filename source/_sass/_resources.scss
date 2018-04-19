@@ -3,6 +3,13 @@
   padding-top: 80px;
   padding-bottom: 80px;
   
+  p > a {
+    color: currentColor;
+    background-color: rgba(black, .05);
+    &:hover {
+      background-color: rgba(black, .1);
+    }
+  }
 
   h2 {
     text-align: left;
@@ -97,8 +104,17 @@
     text-transform: uppercase;
     margin-top: 80px;
   }
+
+  &__item ul { padding: 0 0 0 25px; }
+  &__item li { 
+    list-style: circle; 
+    margin-bottom: 5px;
+  }
 }
 
+.terms {
+
+}
 
 .resources-page {
   .panel-container {

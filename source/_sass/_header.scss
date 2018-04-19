@@ -1,0 +1,26 @@
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: right;
+  font-size: 1.1rem;
+
+  > a {
+    display: inline-block;
+    margin: 5px -2px;
+    padding: 10px 20px;
+    color: white;
+    @extend .u-transition;
+
+    &:hover {
+      background-color: $orange;
+      color: white;
+    }
+
+    @include breakpoint($small-only) {
+      display: block;
+    }
+  }
+}
