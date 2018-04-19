@@ -2,7 +2,7 @@
 .page-section {
   padding-top: 80px;
   padding-bottom: 80px;
-  color: rgba(white, .7);
+  
 
   h2 {
     text-align: left;
@@ -33,11 +33,21 @@
     text-transform: uppercase;
   }
 
+  &--black,
+  &--red,
+  &--purple,
+  &--orange,
+  &--blue {
+    color: rgba(white, .7);  
+  }
+
+
   &--black { background-color: $dark-gray; }
   &--red { background-color: $red; }
   &--purple { background-color: $purple; }
   &--orange { background-color: $orange; }
   &--blue { background-color: $blue; }
+  &--light { background-color: rgba(black, .03); }
 }
 
 .panel-container {
@@ -74,6 +84,18 @@
     &:hover {
       color: white;
     }
+  }
+}
+
+.faq {
+  padding: 0;
+
+  &__item + &__item { margin-top: 80px; }
+
+  > h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 80px;
   }
 }
 
