@@ -45,8 +45,8 @@
 
 .by-line {
   text-align: right;
-  color: rgba(0, 0, 0, 0.4);
-  background-color: #f4821f;
+  color: rgba(255, 255, 255, 0.4);
+  background-color: #3c3e3d;
   display: block;
   padding: 10px 20px;
   font-size: 1rem;
@@ -125,7 +125,8 @@ li {
 #back-button {
   text-align: left; }
   #back-button:hover {
-    background-color: transparent; }
+    background-color: transparent;
+    color: white; }
 
 #particles-container div {
   position: absolute; }
