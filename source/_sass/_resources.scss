@@ -55,6 +55,7 @@
   &--orange { background-color: $orange; }
   &--blue { background-color: $blue; }
   &--light { background-color: rgba(black, .03); }
+  &--yellow { background-color: $yellow; }
 }
 
 .panel-container {
@@ -65,6 +66,8 @@
     @include breakpoint($small-only) { padding-top: 30px; }
     @include breakpoint($medium-up) { padding-right: 60px; }
   }
+
+  .panel--2 { flex: 2; }
 }
 
 .big-title {
@@ -99,10 +102,15 @@
 
   &__item + &__item { margin-top: 80px; }
 
-  > h3 {
+  h2 {
     font-weight: 400;
     text-transform: uppercase;
-    margin-top: 80px;
+    padding-top: 60px;
+  }
+
+  h3 {
+    color: $blue;
+    font-weight: 400;
   }
 
   &__item ul { padding: 0 0 0 25px; }
@@ -133,3 +141,7 @@
   }
 }
 
+
+.title--white.title--white {
+  color: white;
+}

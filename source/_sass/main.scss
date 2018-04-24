@@ -105,7 +105,11 @@ ul {
     color: white;
   }
 
-
+  &.button--positive {
+    &:hover {
+      color: $orange;
+    }
+  }
 }
 
 
