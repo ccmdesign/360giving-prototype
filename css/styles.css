@@ -45,8 +45,8 @@
 
 .by-line {
   text-align: right;
-  color: rgba(255, 255, 255, 0.4);
-  background-color: #3c3e3d;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: #b1c1ca;
   display: block;
   padding: 10px 20px;
   font-size: 1rem;
@@ -127,17 +127,36 @@ li {
   #back-button:hover {
     background-color: transparent;
     color: white; }
+  #back-button.button--positive:hover {
+    color: #f4821f; }
 
 #particles-container div {
   position: absolute; }
 #particles-container canvas {
   overflow: hidden; }
 
+#footer {
+  margin: 0;
+  padding: 30px 0 40px;
+  text-align: center;
+  background-color: #bdcbd2; }
+  #footer h2 {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-weight: 300;
+    text-transform: uppercase; }
+  #footer img {
+    max-width: 200px;
+    margin: 0 30px;
+    vertical-align: middle; }
+  #footer .digging-data {
+    max-width: 300px; }
+
 .main-nav {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 50%;
   z-index: 1000;
   text-align: right;
   font-size: 1.1rem; }
@@ -207,7 +226,7 @@ li {
       background-color: rgba(244, 130, 31, 0.8); }
       @media (min-width: 40.063em) {
         .hero h3 span {
-          margin-left: -10px; } }
+          margin-left: -9.5px; } }
     @media (min-width: 40.063em) {
       .hero h3 {
         font-size: 3rem; } }
@@ -312,25 +331,18 @@ li {
     background-color: #3c3e3d; }
   .call-to-action--blue {
     background-color: #00AFDE; }
+  .call-to-action--yellow {
+    background-color: #E2E41A; }
   .call-to-action--orange {
     background-color: #f4821f; }
   .call-to-action--subtle {
     background-color: rgba(0, 0, 0, 0.2); }
   .call-to-action--white {
     background-color: white; }
-  .call-to-action--displaced {
-    text-align: center;
-    position: relative;
-    bottom: -160px;
-    margin-top: -140px; }
-    @media (min-width: 64.063em) {
-      .call-to-action--displaced {
-        max-width: 1000px;
-        margin-left: -40px; } }
 
 .participate {
-  padding-top: 150px;
-  margin-top: -150px; }
+  padding-top: 220px;
+  margin-top: -240px; }
 
 .participate {
   background-color: #3c3e3d;
@@ -618,6 +630,9 @@ li {
   .page-header--light,
   .page-section--light {
     background-color: rgba(0, 0, 0, 0.03); }
+  .page-header--yellow,
+  .page-section--yellow {
+    background-color: #E2E41A; }
 
 @media (min-width: 40.063em) {
   .panel-container {
@@ -630,6 +645,8 @@ li {
   @media (min-width: 40.063em) {
     .panel-container .panel {
       padding-right: 60px; } }
+.panel-container .panel--2 {
+  flex: 2; }
 
 .big-title {
   font-size: 6rem;
@@ -654,10 +671,13 @@ li {
   padding: 0; }
   .faq__item + .faq__item {
     margin-top: 80px; }
-  .faq > h3 {
+  .faq h2 {
     font-weight: 400;
     text-transform: uppercase;
-    margin-top: 80px; }
+    padding-top: 60px; }
+  .faq h3 {
+    color: #00AFDE;
+    font-weight: 400; }
   .faq__item ul {
     padding: 0 0 0 25px; }
   .faq__item li {
@@ -673,3 +693,125 @@ li {
   .resources-page .button:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: white; }
+
+.title--white.title--white {
+  color: white; }
+
+.submission-page .big-title {
+  font-size: 5rem;
+  line-height: 1.2; }
+.submission-page h3 {
+  text-transform: uppercase;
+  font-family: "neusa-next-std-compact", sans-serif; }
+.submission-page .long-description {
+  font-family: "neusa-next-std", sans-serif; }
+  .submission-page .long-description p {
+    font-size: 1.5rem; }
+  .submission-page .long-description p:first-of-type:first-letter {
+    font-size: 10rem;
+    float: left;
+    line-height: .8;
+    font-weight: 100;
+    margin-right: 20px;
+    color: #f4821f; }
+
+.tweet-msg {
+  position: relative; }
+  .tweet-msg > svg {
+    width: 40px;
+    position: absolute;
+    left: -55px;
+    top: -5px;
+    fill: #00AFDE; }
+
+.social-media a {
+  vertical-align: bottom;
+  display: inline-block;
+  margin-right: 20px; }
+  .social-media a:hover {
+    color: #f4821f; }
+.social-media__icon i {
+  font-size: 40px; }
+.social-media--website i {
+  transform: rotate(-45deg); }
+
+.project-preview {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: right;
+  padding-bottom: 10%;
+  background-image: url("../images/computer.svg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  @media (min-width: 64.063em) {
+    .project-preview {
+      position: absolute;
+      top: 120px;
+      right: -10%;
+      width: 55%;
+      max-width: 750px; } }
+  @media (max-width: 64em) {
+    .project-preview {
+      padding-top: 2.4%; } }
+  .project-preview__anchor {
+    position: relative;
+    overflow: hidden; }
+  .project-preview__upload {
+    width: 75%;
+    padding-bottom: 44%;
+    margin: 0 12.5%;
+    background-size: cover; }
+    @media (min-width: 64.063em) {
+      .project-preview__upload {
+        margin: 3% 12.5%; } }
+
+.project-team {
+  text-align: center;
+  padding-top: 0; }
+  @media (min-width: 40.063em) {
+    .project-team {
+      margin-top: 100px; } }
+  @media (min-width: 64.063em) {
+    .project-team .person {
+      max-width: 20%; } }
+  @media (min-width: 40.063em) {
+    .project-team .person {
+      display: inline-block;
+      max-width: 25%;
+      margin: -80px 20px 0;
+      text-align: center; } }
+  @media (max-width: 40em) {
+    .project-team .person {
+      clear: both;
+      margin: 20px; }
+      .project-team .person h2, .project-team .person h3, .project-team .person h4 {
+        text-align: left !important; }
+      .project-team .person h2 {
+        padding-top: 40px !important; } }
+  .project-team .person__pic {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    margin: 0 auto; }
+    @media (max-width: 40em) {
+      .project-team .person__pic {
+        float: left;
+        margin: 20px; } }
+  .project-team .person h2, .project-team .person h3, .project-team .person h4 {
+    margin: 0;
+    text-align: center;
+    font-family: "neusa-next-std-compact", sans-serif;
+    text-transform: none;
+    line-height: 1.3;
+    margin-top: 10px; }
+  .project-team .person h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 100; }
+  .project-team .person h3 {
+    font-size: 1.5rem; }
+  .project-team .person h4 {
+    color: rgba(0, 0, 0, 0.4); }
