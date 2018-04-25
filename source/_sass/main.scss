@@ -125,6 +125,12 @@ ul {
 #footer {
   margin: 0;
   padding: 30px 0 40px;
+  text-align: center;
+  background-color: #bdcbd2;
+
+  .panel-container { align-items: center; }
+
+  a:hover { color: $red; }
 
   h2 { 
     text-align: center; 
@@ -133,16 +139,17 @@ ul {
     text-transform: uppercase;
   }
   
-  text-align: center;
-  background-color: #bdcbd2;
-  
   img {
-    max-width: 200px;
+    width: 200px;
     margin: 0 30px;
     vertical-align: middle;
   }
 
-  .digging-data {
-    max-width: 300px;
+  p {
+    margin: 0 40px 0 100px;
+    text-align: left;
+
   }
+
+  
 }
