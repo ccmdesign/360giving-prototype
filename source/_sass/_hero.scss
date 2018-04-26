@@ -1,5 +1,5 @@
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,9 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @include breakpoint($medium) { min-height: 900px; }
+  @include breakpoint($medium) { 
+    min-height: 900px; 
+  }
   @include breakpoint($large) { min-height: 0; }
 
   @include breakpoint($medium-up) {
@@ -28,14 +30,14 @@
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 1.25;
     text-shadow: 1px 1px 8px rgba(black, .4);
     @include breakpoint($medium-up) { font-size: 7rem; }  
   }
 
   h2 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     line-height: 1.35;
     
     span { 
@@ -60,24 +62,11 @@
     @include breakpoint($medium-up) { font-size: 3rem; }
   }
 
-  .arrow {
-    color: white;
-    position: absolute;
-    bottom: 30px;
+  .button {
+    margin: 0 0 80px 0;
+    // width: auto;
 
-    i { 
-      animation: pulse 1s infinite;
-      font-size: 6rem; 
-      display: block;
-      line-height: .25;
-    }
   }
-}
-
-@keyframes pulse {
-  0% { opacity: 0.2; }
-  50% { opacity: 0.7; }
-  100% { opacity: 0.2; }
 }
 
 .main-logo-container {
@@ -117,3 +106,4 @@
     padding-top: 200px !important;
   }
 }
+

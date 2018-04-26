@@ -7,7 +7,15 @@
   text-align: right;
   font-size: 1.1rem;
 
-  > a {
+  > div {
+    @include breakpoint($small-only) { 
+      display: block;
+      padding-right: 10px;
+    }
+    display: inline-block;
+  }
+
+  a {
     display: inline-block;
     margin: 5px -2px;
     padding: 10px 20px;
@@ -20,7 +28,8 @@
     }
 
     @include breakpoint($small-only) {
-      display: block;
+      // display: block;
+      width: auto;
     }
   }
 }
