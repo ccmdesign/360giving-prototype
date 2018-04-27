@@ -149,8 +149,23 @@ ul {
   p {
     margin: 0 40px 0 100px;
     text-align: left;
-
+    @include breakpoint($small-only) { 
+      text-align: center; 
+      margin: 40px 0 0;
+    }
+    
+    span {
+      @include breakpoint($small-only) { display: none; }
+    }
   }
+}
 
-  
+.align-center.align-center { text-align: center; }
+
+.thanks-page {
+  .page-section { min-height: 56.6vh;}
+  .big-title {
+    margin-top: 15vh;
+  }
+  h2 { margin-top: 0 !important; }
 }
